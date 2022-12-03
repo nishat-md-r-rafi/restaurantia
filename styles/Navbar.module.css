@@ -1,0 +1,90 @@
+.container {
+    /* background-color: red; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    position: sticky;
+    top: 0;
+    background-color: #e75631;
+}
+
+.item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.item:nth-child(2){
+    flex: 3;
+    text-align: center;
+}
+
+.item:last-child{
+    justify-content: flex-end;
+}
+
+.callButton {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .texts {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .text:first-child {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .text:last-child {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .list {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+.logo{
+    color: rgb(242, 194, 194);
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 50%;
+  }
+
+.listItem {
+    margin: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+.cart{
+    position: relative;
+}
+
+.counter{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d1411e;
+}
