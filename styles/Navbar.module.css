@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     background-color: #e75631;
+    z-index: 1000;
 }
 
 .item{
@@ -18,7 +19,8 @@
 
 .item:nth-child(2){
     flex: 3;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .item:last-child{
@@ -87,4 +89,14 @@
     justify-content: center;
     font-weight: bold;
     color: #d1411e;
+}
+
+@media screen and (max-width: 480px) {
+  
+  .item:nth-child(2){
+    display: none;
+}
+  .item:nth-child(1){
+    flex : 3;
+}
 }
