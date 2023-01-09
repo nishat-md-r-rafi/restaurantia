@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
+import Link from 'next/link'
 
 export const Navbar = () => {
   return (
@@ -16,21 +17,21 @@ export const Navbar = () => {
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Homepage</li>
-          <li className={styles.listItem}>Products</li>
-          <li className={styles.listItem}>Menu</li>
-            <span className={styles.logo}>Bush</span>
-          <li className={styles.listItem}>Events</li>
-          <li className={styles.listItem}>Blog</li>
-          <li className={styles.listItem}>Contact</li>
+          <Link href='/'><li className={styles.listItem}>Homepage</li></Link>
+          <Link href="/product/1"><li className={styles.listItem}>Products</li></Link>
+          <Image src='/img/restaurant.jpg' height={42} width={42} alt=""/>
+          <Link href="/order/1"><li className={styles.listItem}>Orders</li></Link>
+          <li className={styles.listItem}>SignIN</li>
         </ul>
       </div>
       <div className={styles.item}>
+        <Link href='/cart'>
         <div className={styles.cart}>
         <Image src='/img/cart.png' alt="cart" width={32} height={32}/>
         <div className={styles.counter}>2</div>
 
         </div>
+        </Link>
       </div>
     </div>
   )
